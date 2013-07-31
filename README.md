@@ -2,7 +2,7 @@
 
 ---
 
-# [WIKI lovin'!](https://github.com/registerguard/registerguard.github.com/wiki)
+### &#8594; [WIKI lovin'!](https://github.com/registerguard/registerguard.github.com/wiki) &#8592;
 
 ---
 
