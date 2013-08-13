@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Bookmarklets</title>
+	
+</head>
+<body>
+	
+	<h1>How to use:</h1>
+	
+	<ol>
+		<li><b>Drag</b> bookmarklet link to your bookmarks toolbar</li>
+		<li><b>Visit</b> <a href="http://maps.google.com/">Google Maps</a></li>
+		<li><b>Click</b> on bookmarklet and follow the instructions</li>
+	</ol>
+	
+	<hr>
+	
+	<section>
+		
+		<h1>Search Cach&eacute; docs:</h1>
+		
+		<ul>
+			<li><a href="javascript:(function()%7Bp1%3Dprompt('Search%20docs.intersystems.com%2F%20for%3A'%2C'')%3Bp2%3Dprompt('Cach%C3%A9%20Version%3A'%2C'2011.1')%3Bif(p1%26%26p2)%7Blocation.href%3D'http%3A%2F%2Fdocs.intersystems.com%2Fcache'%2Bp2.replace(%2F%5B%5E%5Cd%5D%2Fg%2C'')%2B'%2Fcsp%2Fdocbook%2FDocBook.UI.SearchPageZen.cls%3FKeyWord%3D'%2Bp1%3B%7D%7D)();">Any Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20131/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2013.1 Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20121/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2012.1 Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20111/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2011.1 Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20101/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2010.1 Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20091/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2009.1 Caché docs</a></li>
+			<li><a href="javascript:void(str=prompt(%22Search%20docs.intersystems.com/%20for:%22,%22%22));if(str){location.href=%22http://docs.intersystems.com/cache20081/csp/docbook/DocBook.UI.SearchPageZen.cls?KeyWord=%22+str;}">2008.1 Caché docs</a></li>
+		</ul>
+		
+	</section>
+	
+	<hr>
+	
+	<section>
+		
+		<h1>Search current or specified site with optional date restriction:</h1>
+		<p><a href="javascript:(function%28%29%7Bp1%3Dprompt%28%27Keywords%3A%27%2C%27%27%29%3Bp2%3Dprompt%28%27Days%20back%3A%27%2C30%29%3Bp3%3Dprompt%28%27Site%3A%5CnNote%3A%20Leave%20blank%20to%20use%20current%20site.%27%29%3Bif%28p1%29%7Bif%28p2%29%7Bd%3D%27tbs%3Dqdr%3Ad%27%2Bp2%2B%27%2Csbd%3A1%26%27%3B%7Delse%7Bd%3D%27%27%3B%7Dif%28p3%29%7Bh%3Dp3%3B%7Delse%7Bh%3Dwindow.location.hostname%3B%7Ddocument.location.href%3D%27http%3A%2F%2Fwww.google.com%2Fsearch%3F%27%2Bd%2B%27%26safe%3Doff%26q%3Dsite%3A%27%2Bh%2B%27%20%27%2Bescape%28p1%29%3B%7D%7D)();">gSearch</a></p>
+		
+		<!--
+		<h3>Search current or specified site with optional date restriction:</h3>
+		<p><a href="javascript:(function(){p1=prompt('Keywords:','');p2=prompt('Days back:',30);p3=prompt('Site:\nNote: Leave blank to use current site.');if(p1){if(p2){d='tbs=qdr:d'+p2+',sbd:1&';}else{d='';}if(p3){h=p3;}else{h=window.location.hostname;}document.location.href='http://www.google.com/search?'+d+'&safe=off&q=site:'+h+' '+escape(p1);}})();">gSearch</a></p>
+		-->
+		
+	</section>
+	
+	<hr>
+	
+	<section>
+		
+		<h1>The Register-Guard Google Maps Marker Maker:</h1>
+		<p><a href="javascript:(function(){var%20d='|';var%20b=window.gApplication.getMap().getCenter().toString().replace(/[^\d.,-]/g,'').split(',');var%20c=prompt('Title:\nNo%20title?%20Hit%20return%20key.','');var%20a=prompt('Description:\nNo%20description?%20Hit%20return%20key.','');if(c.length>0){c=d+c}if(a.length>0){a=d+a;if(c.length<=0){a=d+a}}prompt('Copy%20to%20your%20clipboard:',b[0]+d+b[1]+c+a)})();">[RG] gMap</a></p>
+		
+		<h2>Just get lat/lon:</h2>
+		<p><a href="javascript:(function(){ll=window.gApplication.getMap().getCenter().toString().replace(/[^\d.,-]/g,'');prompt('Copy%20to%20your%20clipboard:',ll);})();">[gMaps] lat/lon</a></p>
+		
+	</section>
+	
+	<p><a href="http://en.wikipedia.org/wiki/Bookmarklet">WikiPedia: Bookmarklet</a></p>
+	
+</body>
+</html>
