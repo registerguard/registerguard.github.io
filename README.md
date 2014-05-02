@@ -2,8 +2,6 @@
 
 ---
 
-### &#8594; [WIKI lovin'!](https://github.com/registerguard/registerguard.github.com/wiki) &#8592;
-
----
+# &rarr; &rarr; &rarr; [WIKI lovin'!](https://github.com/registerguard/registerguard.github.com/wiki) &larr; &larr; &larr;</h1>
 
 (:
